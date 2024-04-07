@@ -4,29 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="output.css" />
-    <title>Document </title>
+    <title>Document</title>
   </head>
   <body>
     <header class="flex bg-slate-800 text-white justify-between px-4">
       <div>
-        <a href="/" class="block py-navbar-item px-navbar-item"> Logo </a>
+        <a href="/" class="block py-navbar-item"> Logo </a>
       </div>
       <nav>
         <ul class="grid grid-flow-col">
           <li>
             <a
               href="/src/index.html"
-              class="block py-navbar-item px-navbar-item"
+              class="block py-navbar-item px-navbar-item hover:bg-slate-700"
               >Home</a
             >
           </li>
           <li>
-            <a href="#" class="block py-navbar-item px-navbar-item"
+            <a
+              href="#"
+              class="block py-navbar-item px-navbar-item hover:bg-slate-700"
               >Categories</a
             >
           </li>
           <li>
-            <a href="#" class="block py-navbar-item px-navbar-item"
+            <a
+              href="#"
+              class="block py-navbar-item px-navbar-item hover:bg-slate-700"
               >Refernces</a
             >
           </li>
@@ -37,7 +41,7 @@
           <li>
             <a
               href="/src/cart.html"
-              class="flex items-center py-navbar-item px-navbar-item"
+              class="flex items-center py-navbar-item px-navbar-item hover:bg-slate-700"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +61,9 @@
             </a>
           </li>
           <li>
-            <a href="#" class="block py-navbar-item px-navbar-item"
+            <a
+              href="#"
+              class="block py-navbar-item px-navbar-item hover:bg-slate-700"
               >My Account</a
             >
             <ul class="hidden">
@@ -70,7 +76,7 @@
           <li>
             <a
               href="/src/login.html"
-              class="flex items-center py-navbar-item px-navbar-item"
+              class="flex items-center py-navbar-item px-navbar-item hover:bg-slate-700"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -87,13 +93,13 @@
                 />
               </svg>
 
-              Login
+              Login d
             </a>
           </li>
           <li>
             <a
-              href="/src/signup.html" 
-              class="flex items-center py-2 px-2 rounded bg-emerald-500 hover:bg-emerald-600"
+              href="/src/signup.html"
+              class="flex items-center py-2 px-2 rounded bg-emerald-500 hover:bg-emerald-600 ml-3"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -115,6 +121,22 @@
           </li>
         </ul>
       </nav>
+      <button class="block md:hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+          />
+        </svg>
+      </button>
     </header>
   </body>
 </html>
