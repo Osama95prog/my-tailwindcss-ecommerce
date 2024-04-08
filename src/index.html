@@ -6,42 +6,73 @@
     <link rel="stylesheet" href="output.css" />
     <title>Document</title>
   </head>
-  <body>
+  <body class="bg-gray-200">
     <header class="flex bg-slate-800 text-white justify-between px-4">
       <div>
-        <a href="/" class="block py-navbar-item"> Logo </a>
+        <a href="/src" class="block py-navbar-item"> Logo </a>
       </div>
-      <nav>
-        <ul class="grid grid-flow-col">
+      <div
+        class="block fixed top-0 left-0 bottom-0 h-full w-[220px] bg-slate-900 md:hidden"
+      >
+        <ul>
           <li>
             <a
               href="/src/index.html"
-              class="block py-navbar-item px-navbar-item hover:bg-slate-700"
-              >Home</a
+              class="flex items-center py-navbar-item px-navbar-item transition-all hover:bg-slate-700"
             >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5 mr-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                />
+              </svg>
+
+              Home
+            </a>
           </li>
           <li>
             <a
               href="#"
-              class="block py-navbar-item px-navbar-item hover:bg-slate-700"
-              >Categories</a
+              class="flex items-center py-navbar-item px-navbar-item transition-all hover:bg-slate-700"
             >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5 mr-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125"
+                />
+              </svg>
+              Categories
+            </a>
           </li>
           <li>
             <a
               href="#"
-              class="block py-navbar-item px-navbar-item hover:bg-slate-700"
+              class="block py-2 px-navbar-item transition-all hover:bg-slate-700"
               >Refernces</a
             >
           </li>
         </ul>
-      </nav>
-      <nav>
-        <ul class="grid grid-flow-col items-center">
+        <ul>
           <li>
             <a
               href="/src/cart.html"
-              class="flex items-center py-navbar-item px-navbar-item hover:bg-slate-700"
+              class="flex items-center py-2 px-navbar-item transition-all hover:bg-slate-700"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -60,23 +91,365 @@
               Cart
             </a>
           </li>
+          <li class="relative">
+            <a
+              href="#"
+              class="flex justify-between items-center py-2 px-navbar-item transition-all hover:bg-slate-700"
+            >
+              My Account
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5 ml-3"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </a>
+            <ul class="w-full bg-slate-800 py-2">
+              <li>
+                <a
+                  href="/src/profile.html"
+                  class="flex hover:bg-slate-600 py-1 px-4"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5 mr-3"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+                    />
+                  </svg>
+                  My Profile
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/src/watchlist.html"
+                  class="flex items-center hover:bg-slate-600 py-1 px-4"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5 mr-3"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                    />
+                  </svg>
+                  Watchlist
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/src/orders.html"
+                  class="flex items-center hover:bg-slate-600 py-1 px-4"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5 mr-3"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25ZM6.75 12h.008v.008H6.75V12Zm0 3h.008v.008H6.75V15Zm0 3h.008v.008H6.75V18Z"
+                    />
+                  </svg>
+                  Orders
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/src/logout.html"
+                  class="flex items-center hover:bg-slate-600 py-1 px-4"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5 mr-2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15m-3 0-3-3m0 0 3-3m-3 3H15"
+                    />
+                  </svg>
+
+                  Logout
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="my-3">
+            <a
+              href="/src/login.html"
+              class="flex items-center py-2 px-navbar-item transition-all hover:bg-slate-700"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 mr-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15M12 9l-3 3m0 0 3 3m-3-3h12.75"
+                />
+              </svg>
+
+              Login
+            </a>
+          </li>
+          <li class="px-3">
+            <a
+              href="/src/signup.html"
+              class="flex items-center py-2 px-2 rounded transition-colors bg-emerald-500 hover:bg-emerald-600"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 mr-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                />
+              </svg>
+
+              Signup for Free
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <nav class="hidden md:block">
+        <ul class="grid grid-flow-col">
+          <li>
+            <a
+              href="/src/index.html"
+              class="flex items-center py-navbar-item px-navbar-item transition-all hover:bg-slate-700"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 mr-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                />
+              </svg>
+
+              Home
+            </a>
+          </li>
           <li>
             <a
               href="#"
-              class="block py-navbar-item px-navbar-item hover:bg-slate-700"
-              >My Account</a
+              class="flex items-center py-navbar-item px-navbar-item transition-all hover:bg-slate-700"
             >
-            <ul class="hidden">
-              <li><a href="/src/profile.html">My Profile</a></li>
-              <li><a href="/src/watchlist.html">Watchlist</a></li>
-              <li><a href="/src/orders.html">Orders</a></li>
-              <li><a href="/src/logout.html">Logout</a></li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 mr-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125"
+                />
+              </svg>
+              Categories
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block py-navbar-item px-navbar-item transition-all hover:bg-slate-700"
+              >Refernces</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <nav class="hidden md:block">
+        <ul class="grid grid-flow-col items-center">
+          <li>
+            <a
+              href="/src/cart.html"
+              class="flex items-center py-navbar-item px-navbar-item transition-all hover:bg-slate-700"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 mr-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                />
+              </svg>
+              Cart
+            </a>
+          </li>
+          <li class="relative">
+            <a
+              href="#"
+              class="flex items-center py-navbar-item px-navbar-item transition-all hover:bg-slate-700"
+            >
+              My Account
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5 ml-3"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </a>
+            <ul class="absolute z-10 w-40 right-0 bg-slate-800 py-2">
+              <li>
+                <a
+                  href="/src/profile.html"
+                  class="flex hover:bg-slate-600 py-1 px-4"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5 mr-3"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+                    />
+                  </svg>
+                  My Profile
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/src/watchlist.html"
+                  class="flex items-center hover:bg-slate-600 py-1 px-4"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5 mr-3"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                    />
+                  </svg>
+                  Watchlist
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/src/orders.html"
+                  class="flex items-center hover:bg-slate-600 py-1 px-4"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5 mr-3"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25ZM6.75 12h.008v.008H6.75V12Zm0 3h.008v.008H6.75V15Zm0 3h.008v.008H6.75V18Z"
+                    />
+                  </svg>
+                  Orders
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/src/logout.html"
+                  class="flex items-center hover:bg-slate-600 py-1 px-4"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5 mr-2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15m-3 0-3-3m0 0 3-3m-3 3H15"
+                    />
+                  </svg>
+
+                  Logout
+                </a>
+              </li>
             </ul>
           </li>
           <li>
             <a
               href="/src/login.html"
-              class="flex items-center py-navbar-item px-navbar-item hover:bg-slate-700"
+              class="flex items-center py-navbar-item px-navbar-item transition-all hover:bg-slate-700"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -99,7 +472,7 @@
           <li>
             <a
               href="/src/signup.html"
-              class="flex items-center py-2 px-2 rounded bg-emerald-500 hover:bg-emerald-600 ml-3"
+              class="flex items-center py-2 px-2 rounded transition-colors bg-emerald-500 hover:bg-emerald-600 ml-3"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -139,21 +512,408 @@
       </button>
     </header>
 
-
-    <!--  ddddddddddddd -->
-
-    <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-      <div class="md:flex">
-        <div class="md:shrink-0">
-          <img class="h-48 w-full object-cover md:h-full md:w-48" src="https://images.unsplash.com/photo-1637734433731-621aca1c8cb6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=404&q=80" alt="Modern building architecture">
-        </div>
-        <div class="p-8">
-          <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Company retreats</div>
-          <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Incredible accommodation for your team</a>
-          <p class="mt-2 text-slate-500">Looking to take your team away on a retreat to enjoy awesome food and take in some sunshine? We have a list of places to do just that.</p>
+    <!-- product list  -->
+    <div
+      class="p-5 grid grid-cols-1 md:grid-cols-2 gap-10 lg:grid-cols-3 xl:grid-cols-4"
+    >
+      <!-- product item  -->
+      <div class="bg-white rounded-md overflow-hidden shadow border border-gray-300 transition-colors hover:border-purple-600">
+        <a href="/src/product.html">
+          <img src="img/product-1.jpg" alt="" class="rounded-t-md transition hover:scale-105 hover:rotate-2"/>
+        </a>
+        <div class="p-3">
+          <a href="/src/product.html" class="text-black font-semibold hover:text-purple-900">
+            <h3 >
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
+              quos harum incidunt dicta est earum.
+            </h3>
+          </a>
+          <p class="text-xl font-bold mt-2 mb-0">$17.2</p>
+          <div class="w-full h-1 bg-purple-400 mt-1"></div>
+          <div class="flex justify-between mt-4">
+            <!-- <button class="flex items-center justify-center align-middle w-8 h-8 rounded-full bg-pink-400 text-white"> -->
+              <button class="flex items-center justify-center  w-10 h-10  text-purple-700 hover:text-white 
+              transition-colors hover:bg-purple-800 border-2 border-purple-700 rounded-full">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 "
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                />
+              </svg>
+            </button>
+            <button
+              class="flex items-center bg-purple-700 text-white py-2 px-3 hover:bg-purple-800 active:bg-purple-600 rounded transition-colors shadow-md hover:scale-105"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 mr-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                />
+              </svg>
+              Add to Cart
+            </button>
+          </div>
         </div>
       </div>
+      <!--/ product item  -->
+      <!-- product item  -->
+      <div class="bg-white rounded-md overflow-hidden shadow border border-gray-300 transition-colors hover:border-purple-600">
+        <a href="/src/product.html">
+          <img src="img/product-2.jpg" alt="" class="rounded-t-md transition hover:scale-105 hover:rotate-2"/>
+        </a>
+        <div class="p-3">
+          <a href="/src/product.html" class="text-black font-semibold hover:text-purple-900">
+            <h3 >
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
+              quos harum incidunt dicta est earum.
+            </h3>
+          </a>
+          <p class="text-xl font-bold mt-2 mb-0">$17.2</p>
+          <div class="w-full h-1 bg-purple-400 mt-1"></div>
+          <div class="flex justify-between mt-4">
+            <!-- <button class="flex items-center justify-center align-middle w-8 h-8 rounded-full bg-pink-400 text-white"> -->
+              <button class="flex items-center justify-center  w-10 h-10  text-purple-700 hover:text-white 
+              transition-colors hover:bg-purple-800 border-2 border-purple-700 rounded-full">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 "
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                />
+              </svg>
+            </button>
+            <button
+              class="flex items-center bg-purple-700 text-white py-2 px-3 hover:bg-purple-800 active:bg-purple-600 rounded transition-colors shadow-md hover:scale-105"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 mr-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                />
+              </svg>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--/ product item  -->
+      <!-- product item  -->
+      <div class="bg-white rounded-md overflow-hidden shadow border border-gray-300 transition-colors hover:border-purple-600">
+        <a href="/src/product.html">
+          <img src="img/product-3.jpg" alt="" class="rounded-t-md transition hover:scale-105 hover:rotate-2"/>
+        </a>
+        <div class="p-3">
+          <a href="/src/product.html" class="text-black font-semibold hover:text-purple-900">
+            <h3 >
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
+              quos harum incidunt dicta est earum.
+            </h3>
+          </a>
+          <p class="text-xl font-bold mt-2 mb-0">$17.2</p>
+          <div class="w-full h-1 bg-purple-400 mt-1"></div>
+          <div class="flex justify-between mt-4">
+            <!-- <button class="flex items-center justify-center align-middle w-8 h-8 rounded-full bg-pink-400 text-white"> -->
+              <button class="flex items-center justify-center  w-10 h-10  text-purple-700 hover:text-white 
+              transition-colors hover:bg-purple-800 border-2 border-purple-700 rounded-full">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 "
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                />
+              </svg>
+            </button>
+            <button
+              class="flex items-center bg-purple-700 text-white py-2 px-3 hover:bg-purple-800 active:bg-purple-600 rounded transition-colors shadow-md hover:scale-105"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 mr-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                />
+              </svg>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--/ product item  -->
+      <!-- product item  -->
+      <div class="bg-white rounded-md overflow-hidden shadow border border-gray-300 transition-colors hover:border-purple-600">
+        <a href="/src/product.html">
+          <img src="img/product-4.jpg" alt="" class="rounded-t-md transition hover:scale-105 hover:rotate-2"/>
+        </a>
+        <div class="p-3">
+          <a href="/src/product.html" class="text-black font-semibold hover:text-purple-900">
+            <h3 >
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
+              quos harum incidunt dicta est earum.
+            </h3>
+          </a>
+          <p class="text-xl font-bold mt-2 mb-0">$17.2</p>
+          <div class="w-full h-1 bg-purple-400 mt-1"></div>
+          <div class="flex justify-between mt-4">
+            <!-- <button class="flex items-center justify-center align-middle w-8 h-8 rounded-full bg-pink-400 text-white"> -->
+              <button class="flex items-center justify-center  w-10 h-10  text-purple-700 hover:text-white 
+              transition-colors hover:bg-purple-800 border-2 border-purple-700 rounded-full">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 "
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                />
+              </svg>
+            </button>
+            <button
+              class="flex items-center bg-purple-700 text-white py-2 px-3 hover:bg-purple-800 active:bg-purple-600 rounded transition-colors shadow-md hover:scale-105"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 mr-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                />
+              </svg>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--/ product item  -->
+      <!-- product item  -->
+      <div class="bg-white rounded-md overflow-hidden shadow border border-gray-300 transition-colors hover:border-purple-600">
+        <a href="/src/product.html">
+          <img src="img/product-5.jpg" alt="" class="rounded-t-md transition hover:scale-105 hover:rotate-2"/>
+        </a>
+        <div class="p-3">
+          <a href="/src/product.html" class="text-black font-semibold hover:text-purple-900">
+            <h3 >
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
+              quos harum incidunt dicta est earum.
+            </h3>
+          </a>
+          <p class="text-xl font-bold mt-2 mb-0">$17.2</p>
+          <div class="w-full h-1 bg-purple-400 mt-1"></div>
+          <div class="flex justify-between mt-4">
+            <!-- <button class="flex items-center justify-center align-middle w-8 h-8 rounded-full bg-pink-400 text-white"> -->
+              <button class="flex items-center justify-center  w-10 h-10  text-purple-700 hover:text-white 
+              transition-colors hover:bg-purple-800 border-2 border-purple-700 rounded-full">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 "
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                />
+              </svg>
+            </button>
+            <button
+              class="flex items-center bg-purple-700 text-white py-2 px-3 hover:bg-purple-800 active:bg-purple-600 rounded transition-colors shadow-md hover:scale-105"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 mr-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                />
+              </svg>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--/ product item  -->
+      <!-- product item  -->
+      <div class="bg-white rounded-md overflow-hidden shadow border border-gray-300 transition-colors hover:border-purple-600">
+        <a href="/src/product.html">
+          <img src="img/product-6.jpg" alt="" class="rounded-t-md transition hover:scale-105 hover:rotate-2"/>
+        </a>
+        <div class="p-3">
+          <a href="/src/product.html" class="text-black font-semibold hover:text-purple-900">
+            <h3 >
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
+              quos harum incidunt dicta est earum.
+            </h3>
+          </a>
+          <p class="text-xl font-bold mt-2 mb-0">$17.2</p>
+          <div class="w-full h-1 bg-purple-400 mt-1"></div>
+          <div class="flex justify-between mt-4">
+            <!-- <button class="flex items-center justify-center align-middle w-8 h-8 rounded-full bg-pink-400 text-white"> -->
+              <button class="flex items-center justify-center  w-10 h-10  text-purple-700 hover:text-white 
+              transition-colors hover:bg-purple-800 border-2 border-purple-700 rounded-full">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 "
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                />
+              </svg>
+            </button>
+            <button
+              class="flex items-center bg-purple-700 text-white py-2 px-3 hover:bg-purple-800 active:bg-purple-600 rounded transition-colors shadow-md hover:scale-105"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 mr-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                />
+              </svg>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--/ product item  -->
+      <!-- product item  -->
+      <div class="bg-white rounded-md overflow-hidden shadow border border-gray-300 transition-colors hover:border-purple-600">
+        <a href="/src/product.html">
+          <img src="img/product-7.jpg" alt="" class="rounded-t-md transition hover:scale-105 hover:rotate-2"/>
+        </a>
+        <div class="p-3">
+          <a href="/src/product.html" class="text-black font-semibold hover:text-purple-900">
+            <h3 >
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
+              quos harum incidunt dicta est earum.
+            </h3>
+          </a>
+          <p class="text-xl font-bold mt-2 mb-0">$17.2</p>
+          <div class="w-full h-1 bg-purple-400 mt-1"></div>
+          <div class="flex justify-between mt-4">
+            <!-- <button class="flex items-center justify-center align-middle w-8 h-8 rounded-full bg-pink-400 text-white"> -->
+              <button class="flex items-center justify-center  w-10 h-10  text-purple-700 hover:text-white 
+              transition-colors hover:bg-purple-800 border-2 border-purple-700 rounded-full">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 "
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                />
+              </svg>
+            </button>
+            <button
+              class="flex items-center bg-purple-700 text-white py-2 px-3 hover:bg-purple-800 active:bg-purple-600 rounded transition-colors shadow-md hover:scale-105"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 mr-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                />
+              </svg>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--/ product item  -->
+    
+     
+    
+   
+  
     </div>
-    <!--  ddddddddddddd -->
+    <!--/ product list  -->
   </body>
 </html>
