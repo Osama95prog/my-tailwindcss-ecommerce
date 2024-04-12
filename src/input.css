@@ -11,3 +11,32 @@
     @apply px-4
   }
 }
+
+.btn-primary{
+  @apply  bg-purple-700 text-white py-2 px-3 hover:bg-purple-800 active:bg-purple-600 
+  rounded transition-colors shadow-md hover:scale-105
+           
+}
+
+.btn-emerald{
+  @apply  bg-emerald-500 text-white py-2 px-3 hover:bg-emerald-600 active:bg-emerald-700 
+  rounded transition-colors shadow-md hover:scale-105
+           
+}
+
+
+.wysiwyg-content h3, 
+.wysiwyg-content h4 {
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.wysiwyg-content table > tbody > tr > td{
+  padding: 0.25rem 0.125rem;
+}
+.wysiwyg-content table > tbody > tr > td:first-child {
+  font-weight: bold;
+}
+.wysiwyg-content h3,h4,h5 {
+  @apply mt-4 font-bold
+}
